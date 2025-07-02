@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/ui/navbar";
-import Button from "@/components/ui/button";
+import Button from "@/components/custom/ui/button";
 
 export default function Hero() {
   return (
