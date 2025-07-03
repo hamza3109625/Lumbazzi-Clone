@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "@/components/ui/button";
+import Button from "@/components/custom/ui/button";
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineUser } from "react-icons/ai";
 import { SlHandbag } from "react-icons/sl";
