@@ -12,20 +12,22 @@ export default function Button({
   type = "button",
 }: ButtonProps) {
   return (
-    <div className="p-[0.5px] rounded-full bg-gradient-to-r from-gray-100 to-gray-700 inline-block">
-      <button
-        type={type}
-        onClick={onClick}
-        className={`
-          font-playfair uppercase tracking-[0.25em] text-xs
-          px-8 py-5 rounded-full bg-slate-900 text-white
-          transition-all duration-300 ease-in-out
-          hover:px-10 hover:font-bold
-          ${className}
-        `}
-      >
-        {children}
-      </button>
-    </div>
+    <button
+      type={type}
+      onClick={onClick}
+      className={`group
+        relative inline-flex items-center justify-center
+        px-8 py-5 rounded-full text-white uppercase tracking-[0.25em] text-xs font-medium
+        bg-transparent border border-transparent
+        before:absolute before:inset-0 before:rounded-full
+        before:bg-gradient-to-r before:from-white/40 before:to-white/10
+        before:content-[''] before:z-[-1] before:p-[1px]
+        hover:before:from-white/60 hover:before:to-white/30
+        transition-all duration-300 ease-in-out
+        ${className}
+      `}
+    >
+      {children}
+    </button>
   );
 }
