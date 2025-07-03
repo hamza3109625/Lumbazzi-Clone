@@ -11,7 +11,7 @@ import Button from "@/components/custom/ui/button";
 
 export function ProductCard() {
   return (
-    <Card className="group  relative rounded-[40px] overflow-hidden text-white">
+    <Card className="group relative rounded-[40px] overflow-hidden text-white">
       <div className="absolute inset-0 z-11 bg-[url('/images/background/noise-bg.png')] opacity-60 pointer-events-none" />
 
       <div className="absolute inset-0 z-[10] bg-gradient-to-br from-[#5d5e1e] to-[#3c3d1c]" />
@@ -54,7 +54,7 @@ export function ProductCard() {
           alt="Leaf right bottom"
           width={300}
           height={300}
-          className="absolute top-50 left-180 -z-10 w-[200px] h-[200px] object-contain 
+          className="absolute top-50 left-177 -z-10 w-[200px] h-[200px] object-contain 
              opacity-0 scale-90 
              transition-all duration-500 ease-in-out 
              group-hover:opacity-100 group-hover:scale-100"
@@ -75,7 +75,7 @@ export function ProductCard() {
 
 export default function ProductCarousel() {
   return (
-    <div className="w-full flex justify-center bg-gray-50 py-12">
+    <div className="w-full flex justify-center py-12">
       <Carousel
         opts={{ align: "start" }}
         className="w-full max-w-[1600px] px-4"

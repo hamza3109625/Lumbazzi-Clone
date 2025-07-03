@@ -4,6 +4,7 @@ import Navbar from "@/components/ui/navbar";
 import { Sheet } from "@/components/ui/sheet";
 import Hero from "@/components/sections/Hero/hero-image";
 import ProductCarousel from "@/components/sections/product-carousel";
+import Heading from "@/components/heading";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
 
     <Hero/>
     <ProductCarousel />
+    <Heading />
   
 
     </div>
