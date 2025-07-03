@@ -7,7 +7,7 @@ import {
   CarouselItem,
   CarouselControls,
 } from "@/components/ui/carousel";
-import Button from "../custom/ui/button";
+import Button from "@/components/custom/ui/button";
 
 export function ProductCard() {
   return (

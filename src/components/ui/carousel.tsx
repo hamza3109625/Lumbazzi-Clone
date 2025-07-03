@@ -117,7 +117,11 @@ function Carousel({
     >
       <div
         onKeyDownCapture={handleKeyDown}
-        className={cn("relative w-full overflow-x-hidden", className)}
+        className={cn(
+          "relative w-full",
+          orientation === "vertical" ? "overflow-y-hidden" : "overflow-x-hidden",
+          className
+        )}
         role="region"
         aria-roledescription="carousel"
         data-slot="carousel"
