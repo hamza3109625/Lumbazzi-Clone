@@ -7,10 +7,13 @@ export default function Hero() {
     <section className="relative h-[800px] w-full overflow-hidden text-white bg-gradient-to-r from-slate-900 to-slate-950">
       <Navbar />
 
-      <div className="relative z-10 flex flex-col items-center justify-center text-center gap-7 pt-6">
-        <h1 className="font-elegant text-2xl md:text-4xl font-bold">Master Your Look</h1>
-        <h2 className="font-elegant text-4xl md:text-6xl">Define Your Legacy</h2>
-        <p className="font-elegant text-base md:text-xl tracking-wider">Proper Care for the Modern Man</p>
+      <div className="relative z-10 flex flex-col items-center justify-center text-center gap-5 pt-6">
+        <h1 className="font-elegant text-4xl md:text-4xl ">Master Your Look</h1>
+        <h2 className="font-elegant text-4xl md:text-6xl">
+  Define Your <span className="italic">Legacy</span>
+</h2>
+
+        <p className=" text-base md:text-xl tracking-wide">Proper Care for the Modern Man</p>
         <Button>EXPERIENCE EXCELLENCE</Button>
       </div>
 

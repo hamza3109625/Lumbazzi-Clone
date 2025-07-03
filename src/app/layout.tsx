@@ -1,20 +1,21 @@
 // app/layout.tsx
 import "./globals.css";
-import { Barlow, Libre_Baskerville, Playfair_Display } from "next/font/google";
+import { Host_Grotesk, Libre_Baskerville, Cormorant_Garamond } from "next/font/google";
 
 
 import type { Metadata } from "next";
 
-const base = Barlow({
+const base = Host_Grotesk({
   subsets: ["latin"],
   variable: "--font-base",
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-const elegant = Playfair_Display({
-  subsets: ["latin"],
+const elegant = Cormorant_Garamond({
+  subsets: ["latin",],
   variable: "--font-elegant",
-  weight: ["400", "700"],
+  weight: ["300","400", "700"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
