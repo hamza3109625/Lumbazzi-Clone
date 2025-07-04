@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "@/components/custom/ui/button";
+import Button from "@/components/custom/ui/white-button";
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineUser } from "react-icons/ai";
 import { SlHandbag } from "react-icons/sl";
@@ -29,7 +29,7 @@ export default function Navbar() {
 
             <Sheet>
                 <SheetTrigger> <RxHamburgerMenu className="md:hidden text-xl text-white" /></SheetTrigger>
-                <SheetContent className="w-[400px] sm:w-[540px]">
+                <SheetContent className="w-[800px] sm:w-[540px]">
                     <SheetHeader>
                         <SheetTitle></SheetTitle>
                         <SheetDescription asChild>
@@ -39,7 +39,6 @@ export default function Navbar() {
                                 <a className="block w-64 text-2xl border-t border-b p-4 text-center" href="/">Why Lumbazzi</a>
                             </div>
                         </SheetDescription>
-
                     </SheetHeader>
                 </SheetContent>
             </Sheet>
